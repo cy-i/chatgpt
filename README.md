@@ -16,7 +16,10 @@
 很多人想要Demo网站中自己输入API-KEY的功能，已经把代码加上了，取消index.php的注释就行了。为了美观可以把上面的“连续对话”部分注释掉，要不然手机访问不是很友好。
 
 在国内访问OpenAI的新接口会提示超时，如果你本地有HTTP-PROXY，可以把stream.php里面注释掉的“curl_setopt($ch, CURLOPT_PROXY, " http://127.0.0.1:1081 ");”修改一下，这样就可以通过你本地的代理访问openai的接口。
+
 如果你自己没代理，可以使用热心网友提供的反代地址，把“curl_setopt($ch, CURLOPT_URL, ' https://api.openai.com/v1/chat/completions ');”这行里面的网址改成' https://openai.1rmb.tk/v1/chat/completions '，不确定那个什么时候会失效，也可以进群再找其他群友求一个。不过反代的方式访问速度比较慢，最好还是自己买个海外服务器吧，每个月不到20元的有的是。
+
+如果你实在不会买海外服务器，那你有自己的域名吗？有的话还可以用cf worker自建反代，具体可以参考这篇文章：https://github.com/noobnooc/noobnooc/discussions/9
 
 *测试网址：http://mm1.ltd*
 
@@ -44,6 +47,8 @@ github上也有一些大神提供了基于官方web版chatgpt的代码（ https:
 docker pull gindex/nginx-php
 docker run -itd -v /root/chatgpt(本地目录):/usr/share/nginx/html --name nginx-php -p 8080(主机端口):80 --restart=always gindex/nginx-php
 ```
+
+还有另一位热心网友基于本项目在github上的docker版chatgpt，网址：https://github.com/hsmbs/chatgpt-php ，也可以用。
 
 喜欢使用独立Windows桌面应用的朋友可以下载Release里面的exe文件运行，其实就是一个指向我演示网站的浏览器套个壳。
 
