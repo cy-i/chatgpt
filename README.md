@@ -1,4 +1,11 @@
 # chatgpt
+GPT-4已经发布，快进群参与讨论吧…… 免费加群，即将达到500人上限，欲加从速。
+------
+**2023-03-16更新版本日志：**
+
+1. 支持表格和公式的显示
+2. 优化了代码显示逻辑
+
 ------
 **2023-03-11更新版本日志：**
 
@@ -21,7 +28,7 @@
 
 如果你实在不会买海外服务器，那你有自己的域名吗？有的话还可以用cf worker自建反代，具体可以参考这篇文章：https://github.com/noobnooc/noobnooc/discussions/9
 
-*测试网址：http://mm1.ltd*
+*测试网址：http://mm1.ltd* 
 
 ![微信截图_20230312112146](https://user-images.githubusercontent.com/5563148/224522389-f60e3047-c0e6-49cd-bee7-80feaf2c86a4.png)
 
@@ -70,6 +77,9 @@ https://platform.openai.com/docs/api-reference/models/list
 ![微信截图_20230306154434](https://user-images.githubusercontent.com/5563148/223048985-4cac05cb-acf0-4f04-aad5-1c3dcec609d0.png)
 
 
-有热心网友建议我放个打赏码，各位如果真的想表达感谢，小额即可。我更希望我的代码可以抛砖引玉，助力各位找到新的业务模式，一年盈利，两年融资，三年上市，走上人生巅峰！
+有热心网友建议我放个打赏码，各位如果真的想表达感谢，小额即可。
 
 ![打赏码](https://user-images.githubusercontent.com/5563148/222968018-9def451a-bbce-4a7e-bde6-edecc7ced40f.jpg)
+
+最后，我还做了个在微信个人订阅号中通过调用OpenAI最新接口和gpt-3.5-turbo模型实现ChatGPT聊天机器人的功能，已开源，需要的朋友也可以拿去。
+https://github.com/dirk1983/chatgpt-wechat-personal
